@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Details</title>
+</head>
+<body>
+  <script>
+    const query = new URLSearchParams(location.search);
+    const name = query.get("name");
+    const password = query.get("password");
+    const email = query.get("email");
+    const subject = query.get("subject");
+    const mobile = query.get("mobile");
+
+    document.write(`<h2>Student Details</h2>`);
+    document.write(`<p><strong>Name:</strong> ${name}</p>`);
+    //<!-- document.write(`<p><strong>Password:</strong> ${password}</p>`); -->
+    document.write(`<p><strong>Email:</strong> ${email}</p>`);
+    document.write(`<p><strong>Subject:</strong> ${subject}</p>`);
+    document.write(`<p><strong>Mobile:</strong> ${mobile}</p>`);
+  </script>
+</body>
+</html>

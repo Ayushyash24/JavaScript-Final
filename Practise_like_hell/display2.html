@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+         const email = params.get("email");
+          const subject = params.get("subject");
+           const mobile = params.get("mobile");
+            const passsword = params.get("password");
+
+            document.write(`<h2>Student Form Details</h2>`);
+            document.write(`Name:${name}<br>`);
+            document.write(`Email:${email}<br>`);
+            document.write(`Subject:${subject}<br>`);
+            document.write(`Mobile:${mobile}<br>`);
+
+    </script>
+</body>
+</html>
